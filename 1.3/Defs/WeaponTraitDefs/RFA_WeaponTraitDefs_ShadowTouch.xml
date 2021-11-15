@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RFA_ShadowTouch</defName>
+		<label>shadow touch</label>
+		<description>Enchanted with powerful shadow magic, this weapon can sometimes release a blast of vampiric energy against its target and impair the enemy's ability to fight back.</description>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.50</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Drain">
+						<hpToDrain>3~5</hpToDrain>
+						<drainDamage>RF_DrainDamage</drainDamage>
+						<fleckDefOnTarget>RF_Fleck_BlastAmethyst_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Heal">
+						<hpToHeal>2~3</hpToHeal>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>RF_CooldownIncreaseMinor</hediffDef>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.25</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

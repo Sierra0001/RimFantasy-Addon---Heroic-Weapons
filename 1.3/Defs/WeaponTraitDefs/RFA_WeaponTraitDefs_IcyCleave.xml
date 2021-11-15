@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RFA_IcyCleave</defName>
+		<label>icy cleave</label>
+		<description>Enchanted with powerful ice magic, this weapon can occasionally inflict magical damage against its target and cause hypothermia. Nearby enemies around the target are also battered with magical waves.</description>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.50</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Slash">
+						<baseDamageValue>4</baseDamageValue>
+						<amountOfEnemies>1~2</amountOfEnemies>
+						<maxDistance>2.5</maxDistance>
+						<baseDamageFactor>0.75</baseDamageFactor>
+					</li>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Frostbite</effectDamage>
+						<baseDamageValue>3</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastAquamarine_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Hypothermia</hediffDef>
+						<severityOffset>-0.20</severityOffset> <!--10% above Minor -->
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.25</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

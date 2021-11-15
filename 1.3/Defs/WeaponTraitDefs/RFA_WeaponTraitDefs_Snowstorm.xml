@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RFA_Snowstorm</defName>
+		<label>snowstorm</label>
+		<description>Enchanted with ice and lightning magic, this weapon can occasionally release a powerful blast of magic that injures and briefly stuns a target.</description>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Multiple">
+				<effectChance>0.50</effectChance>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect">
+						<effectDamage>Frostbite</effectDamage>
+						<baseDamageValue>3</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastAquamarine_Round</fleckDefOnTarget>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_ApplyHediff">
+						<hediffDef>Hypothermia</hediffDef>
+						<severityOffset>-0.25</severityOffset> <!--5% above Minor -->
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Stun">
+						<stunDuration>45~60</stunDuration>
+						<effectDamage>Burn</effectDamage>
+						<baseDamageValue>3</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastCitrine_Round</fleckDefOnTarget>
+					</li>
+				</weaponEffects>
+			</li>
+		</weaponEffects>
+		<commonality>1.25</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

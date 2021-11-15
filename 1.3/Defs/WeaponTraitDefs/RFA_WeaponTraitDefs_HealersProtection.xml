@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<RimFantasy.ArcaneWeaponTraitDef>
+		<defName>RFA_HealersProtection</defName>
+		<label>healer's protection</label>
+		<description>Enchanted with both healing and battle magic, this weapon extends a bubble of energy to protect its wielder from harm, and can sometimes heal minor injuries during combat.</description>
+		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<isShield>true</isShield>
+		<shieldRechargeRate>0.10</shieldRechargeRate>
+		<shieldEnergyMax>1.1</shieldEnergyMax>
+		<shieldTexPath>Other/ShieldBubble_Peridot</shieldTexPath>
+		<shieldCombatRecovery>true</shieldCombatRecovery>
+		<deflectMeleeChance>0.50</deflectMeleeChance>
+		<deflectRangeChance>0.50</deflectRangeChance>
+		<fleckDefOnDeflect>ElectricalSpark</fleckDefOnDeflect>
+		<fleckDefOnDeflectScale>2.25</fleckDefOnDeflectScale>
+		<weaponEffects>
+			<li Class="RimFantasy.WeaponEffect_Heal">
+				<effectChance>0.35</effectChance>
+				<hpToHeal>2~5</hpToHeal>
+				<fleckDefOnTarget>RF_Fleck_BlastPeridot_Round</fleckDefOnTarget> <!-- Reminder: Ask Taran for fleckDefOnSelf -->
+			</li>
+		</weaponEffects>
+		<commonality>1.25</commonality>
+		<marketValueOffset>400</marketValueOffset>
+	</RimFantasy.ArcaneWeaponTraitDef>
+
+</Defs>

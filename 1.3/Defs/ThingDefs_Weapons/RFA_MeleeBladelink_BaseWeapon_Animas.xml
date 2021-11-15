@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="RFA_BaseWeapon_Animas" ParentName="BaseWeapon" Abstract="True">
+		<description>An elegant, curved magical blade with a soothing glow. This is a replica of the named weapon originally used by a longsword wielding heroine named Wise.</description>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>Bladelink</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+		<tradeNeverStack>true</tradeNeverStack>
+		<relicChance>3</relicChance>
+		<tickerType>Normal</tickerType>
+    <costList>
+      <Steel>10</Steel>
+    </costList>
+		<statBases>
+				<WorkToMake>18000</WorkToMake>
+				<Mass>3</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset> <!-- Was -25 -->
+		<soundInteract>Interact_BladelinkMonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>1.75</cooldownTime>
+      </li>
+    </tools>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="RimFantasy.CompProperties_ArcaneWeapon">
+				<biocodeOnEquip>false</biocodeOnEquip>
+				<weaponTraitsPool>
+					<li>RFA_HealersProtection</li>
+				</weaponTraitsPool>
+				<minWeaponTraits>1</minWeaponTraits>
+				<maxWeaponTraits>1</maxWeaponTraits>
+			</li>
+			<!--<li Class="CompProperties_GeneratedName">
+				<nameMaker>RFA_Namer_Animas</nameMaker>
+			</li>-->
+		</comps>
+		<smeltable>true</smeltable>
+		<burnableByRecipe>true</burnableByRecipe>
+		<thingCategories>
+			<li>RFA_SpecialWeapons</li>
+		</thingCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<recipeMaker>
+	      <recipeUsers>
+	        <li>RF_ArcaneCraftingBench</li>
+	      </recipeUsers>
+		<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
+				<skillRequirements>
+					<Crafting>8</Crafting>
+				</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>
