@@ -12,7 +12,7 @@
 		<relicChance>3</relicChance>
 		<tickerType>Normal</tickerType>
     <costList>
-      <Steel>10</Steel>
+      <Steel>15</Steel>
     </costList>
 		<statBases>
 				<WorkToMake>18000</WorkToMake>
@@ -72,9 +72,14 @@
 			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
 		<recipeMaker>
-	    <recipeUsers>
-	      <li>RF_ArcaneCraftingBench</li>
-	    </recipeUsers>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+		   <li>RF_ArcaneCraftingBench</li>
+		  </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
 			<researchPrerequisite>RF_ArcaneWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>

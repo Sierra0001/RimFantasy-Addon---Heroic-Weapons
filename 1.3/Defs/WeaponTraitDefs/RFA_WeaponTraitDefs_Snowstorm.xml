@@ -6,9 +6,18 @@
 		<label>snowstorm</label>
 		<description>Enchanted with ice and lightning magic, this weapon can occasionally release a powerful blast of magic that injures and briefly stuns a target.</description>
 		<workerClass>RimFantasy.ArcaneWeaponTraitWorker</workerClass>
+		<isShield>true</isShield>
+		<shieldRechargeRate>0.05</shieldRechargeRate>
+		<shieldEnergyMax>2.2</shieldEnergyMax>
+		<shieldTexPath>Other/RF_ShieldBubble</shieldTexPath>
+		<shieldTexStuffPostfix>true</shieldTexStuffPostfix>
+		<shieldCombatRecovery>true</shieldCombatRecovery>
+		<ignoreRechargeDelay>false</ignoreRechargeDelay>
+		<deflectMeleeChance>0.80</deflectMeleeChance>
+		<deflectRangeChance>0.80</deflectRangeChance>
 		<weaponEffects>
 			<li Class="RimFantasy.WeaponEffect_Multiple">
-				<effectChance>0.50</effectChance>
+				<effectChance>0.35</effectChance>
 				<weaponEffects>
 					<li Class="RimFantasy.WeaponEffect">
 						<effectDamage>Frostbite</effectDamage>

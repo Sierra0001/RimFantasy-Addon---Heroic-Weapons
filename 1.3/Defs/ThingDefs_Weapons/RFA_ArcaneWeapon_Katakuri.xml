@@ -26,6 +26,11 @@
             <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
           </li>
         </comps>
+        <modExtensions>
+          <li Class="RimFantasy.RimFantasyExtension">
+            <stuffKey>Ruby</stuffKey>
+          </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>
