@@ -16,19 +16,24 @@
 		<deflectMeleeChance>0.80</deflectMeleeChance>
 		<deflectRangeChance>0.80</deflectRangeChance>
 		<weaponEffects>
-			<li Class="RimFantasy.WeaponEffect_Heal">
+			<li Class="RimFantasy.WeaponEffect_Multiple">
 				<effectChance>0.35</effectChance>
-				<hpToHeal>2~5</hpToHeal>
-				<fleckDefOnSelf>RF_Fleck_BlastPeridot_Round</fleckDefOnSelf>
-			</li>
-			<li Class="RimFantasy.WeaponEffect_Slam">
-				<baseDamageValue>2</baseDamageValue>
-				<fleckDefOnTarget>RF_Fleck_BlastDiamond_Round</fleckDefOnTarget>
-				<amountOfEnemies>1~2</amountOfEnemies>
-				<maxDistance>2.5</maxDistance>
-				<knockbackDistance>0.5</knockbackDistance>
-				<knockbackDistanceSecondaryTargets>0.5</knockbackDistanceSecondaryTargets>
-				<baseDamageFactor>0.75</baseDamageFactor>
+				<weaponEffects>
+					<li Class="RimFantasy.WeaponEffect_Heal">
+						<effectChance>0.35</effectChance>
+						<hpToHeal>2~5</hpToHeal>
+						<fleckDefOnSelf>RF_Fleck_BlastPeridot_Round</fleckDefOnSelf>
+					</li>
+					<li Class="RimFantasy.WeaponEffect_Slam">
+						<baseDamageValue>2</baseDamageValue>
+						<fleckDefOnTarget>RF_Fleck_BlastDiamond_Round</fleckDefOnTarget>
+						<amountOfEnemies>1~2</amountOfEnemies>
+						<maxDistance>2.5</maxDistance>
+						<knockbackDistance>0.5</knockbackDistance>
+						<knockbackDistanceSecondaryTargets>0.5</knockbackDistanceSecondaryTargets>
+						<baseDamageFactor>0.75</baseDamageFactor>
+					</li>
+				</weaponEffects>
 			</li>
 		</weaponEffects>
 		<commonality>1.25</commonality>
